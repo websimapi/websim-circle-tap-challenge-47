@@ -42,7 +42,7 @@ export class UIController {
         
         this.gameOverButtonTimeout = setTimeout(() => {
             gameOverButtons.forEach(btn => btn.disabled = false);
-        }, 1000); // 1 second delay
+        }, 600); // 1.5 second delay
 
         this.levelFadeTimeout = setTimeout(() => {
             this.elements.levelDisplay.classList.add('hidden');

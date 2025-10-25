@@ -140,26 +140,6 @@ html, body {
     align-items: stretch;
 }
 
-#game-over-buttons .menu-btn {
-    border: 1px solid var(--secondary-color);
-    transition: background-color 0.2s, transform 0.1s, box-shadow 0.3s, border-color 0.3s;
-}
-
-#game-over-buttons .menu-btn:not(:disabled) {
-    animation: neon-glow-in 0.6s ease-out forwards;
-}
-
-#game-over-buttons .menu-btn:disabled {
-    background-color: #2c2c44;
-    color: #80809c;
-    border-color: #4a4a6a;
-    box-shadow: none;
-}
-
-#game-over-buttons .menu-btn:disabled:hover {
-    background-color: #2c2c44;
-}
-
 #leaderboard-btn, #home-btn {
     flex-grow: 0; /* Let it size to its content/padding */
     padding-left: 12px;
@@ -547,17 +527,4 @@ button:active {
 
 .level-out {
     animation: bounceOut 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
-}
-
-@keyframes neon-glow-in {
-    from {
-        opacity: 0.7;
-        box-shadow: none;
-    }
-    to {
-        opacity: 1;
-        border-color: var(--accent-color);
-        box-shadow: 0 0 4px rgba(233, 69, 96, 0.5),
-                    0 0 8px rgba(233, 69, 96, 0.3);
-    }
 }
